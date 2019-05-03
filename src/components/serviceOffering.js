@@ -11,17 +11,11 @@ const wrapper = css`
   & > div:last-of-type {
     margin-left: 20px;
   }
-
-  @media (max-width: 750px) {
-    flex-direction: column;
-    width: 100%;
-  }
 `
 
 const ServiceOffering = ({ offering: { title, icon, desc } }) => (
   <div css={wrapper}>
     <div>
-      {console.log('icon', icon)}
       <Svg icon={icon} />
     </div>
     <div>

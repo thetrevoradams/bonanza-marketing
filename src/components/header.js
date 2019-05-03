@@ -52,6 +52,10 @@ const logoStyles = css`
     cursor: pointer;
   }
 
+  .gatsby-image-wrapper {
+    padding: 15px;
+  }
+
   & > div {
     display: flex;
     flex-direction: row;
@@ -64,27 +68,21 @@ const logoStyles = css`
     line-height: 1;
     font-size: 1.5rem;
     margin: 0;
-    margin-left: 15px;
     text-transform: uppercase;
+    margin-left: 15px;
   }
-  /* transition: all 0.25s ease-in-out; */
-  /* @media (max-width: 975px) {
-    transform: scale(0.75, 0.75);
-    margin-left: -30px;
+
+  @media (max-width: 425px) {
+    .gatsby-image-wrapper {
+      padding: 25px;
+    }
   }
-  @media (max-width: 400px) {
-    transform: scale(0.65, 0.65);
-    margin-left: -55px;
-  }
-  @media (max-width: 375px) {
-    transform: scale(0.55, 0.55);
-    margin-left: -70px;
-  } */
 `
 
 const imgStyleOverride = css`
   height: 50px;
   width: 50px;
+  padding-right: 15px;
 `
 
 const Header = () => {
